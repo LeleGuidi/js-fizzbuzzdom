@@ -1,23 +1,23 @@
 for (let i = 1; i <= 100; i++) {
     const element = i;
-    const div = document.createElement(`div`);
-    const container = document.querySelector(`div.container`)
-
+    const box = document.createElement(`div`);
+    const container = document.querySelector(`div.container`);
+    box.classList.add(`box`)
     if (element % 3 == 0 && element % 5 == 0) {
-        div.append(`FizzBuzz`)
-        div.classList.add(`box`, `bg_red`)
-        container.append(div)
+        box.append(`FizzBuzz`)
+        box.classList.add(`bg_red`)
+        container.append(box)
     } else if (element % 3 == 0) {
-        div.append(`Fizz`)
-        div.classList.add(`box`, `bg_green`)
-        container.append(div)
+        box.append(`Fizz`)
+        box.classList.add(`bg_green`)
+        container.append(box)
     } else if (element % 5 == 0) {
-        div.append(`Buzz`)
-        div.classList.add(`box`, `bg_yellow`)
-        container.append(div)
+        box.append(`Buzz`)
+        box.classList.add(`bg_yellow`)
+        container.append(box)
     } else {
-        div.append(element)
-        div.classList.add(`box`, `bg_blu`)
-        container.append(div)
+        box.append(element)
+        box.classList.add(`bg_blu`)
+        container.append(box)
     }
 }
