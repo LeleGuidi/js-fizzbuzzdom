@@ -18,15 +18,25 @@ h1 {
     max-width: 1100px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
     flex-wrap: wrap;
 }
-
 .box {
-    width: 150px;
+    width: calc(100% / 7 - 8.57px);
     height: 150px;
     text-align: center;
     line-height: 150px;
     border: 1px solid black;
 }
-
+.bg_blu {
+    background-color: #1389b2;
+}
+.bg_green {
+    background-color: #0bd6a1;
+}
+.bg_red {
+    background-color: #f0466f;
+}
+.bg_yellow {
+    background-color: #ffd166;
+}
